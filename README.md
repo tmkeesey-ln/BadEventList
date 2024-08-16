@@ -14,6 +14,8 @@ Feel free to:
 - Look things up online.
 - Use AI assistance.
 
+In short, feel free to do anything you might do while actually working on a project.
+
 ## Functional Requirements
 
 Given a list of event objects (each representing a concert/show/live event/livestream):
