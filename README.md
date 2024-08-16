@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bad Event List
 
-## Getting Started
+This is a project meant to load and display a list of performance events. The code has a number of issues, including:
 
-First, run the development server:
+- bugs
+- code "smells"
+- invalid uses
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Read the functional requirements below, and then look through the code to find issues. The issues will _only_ be in `app/events/` — no need to look elsewhere. The code is not meant to be run — it will not actually work since there is no API.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Feel free to:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Ask questions.
+- Look things up online.
+- Use AI assistance.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Functional Requirements
 
-## Learn More
+Given a list of event objects (each representing a concert/show/live event/livestream):
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Display a title for the list (provided in properties).
+- Display the event names and times in a list in chronological order.
+- Filter out any events with incomplete information.
+- If there are no events with sufficient information, display a message to the user.
+- Link each list item to the event's URL.
+- When the link is clicked, call an event-tracking function passed through context.

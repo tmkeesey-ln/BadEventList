@@ -105,3 +105,19 @@ a {
     color-scheme: dark;
   }
 }
+
+main {
+  padding: 2em;
+}
+
+li {
+  margin-left: 1em;
+}
+
+h1,
+h2,
+section,
+p,
+ul {
+  margin-bottom: 1rem;
+}
